@@ -1,0 +1,102 @@
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: #003366;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Style 1 - Base page styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+/* Style 2 - Main headings */
+h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+/* Style 3 - Section headings */
+h2 {
+  color: #00509d;
+  border-bottom: 0.15rem solid #00509d;
+  padding-bottom: 0.3rem;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Style 4 - Subheadings */
+h3 {
+  color: #0077cc;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Style 5 - Paragraph formatting */
+p {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 1rem;
+}
+
+/* Style 6 - Images */
+img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  border: 3px solid #003366;
+  border-radius: 10px;
+}
+
+/* Style 7 - Lists */
+ul {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+/* Style 8 - Video */
+video {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  border: 3px solid #003366;
+  border-radius: 10px;
+}
+
+/* Style 9 - Fixed width layout */
+.resume-container {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+/* Style 10 - Fluid content container */
+.content-container {
+  width: 85%;
+  margin: 0 auto;
+}
