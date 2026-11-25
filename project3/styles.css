@@ -118,7 +118,7 @@ video {
 /* Media 1: Tablets and up (min-width: 768px) */
 @media screen and (min-width: 768px) {
   body {
-    background-color: #eef2f7;
+    background-color: #4f9eff;
   }
   h1 {
     font-size: 2.8rem;
@@ -131,7 +131,7 @@ video {
 /* Media 2: Desktops and up (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   body {
-    background-color: #f4f6f9;
+    background-color: #bfbef0;
   }
   h1 {
     font-size: 3.2rem;
