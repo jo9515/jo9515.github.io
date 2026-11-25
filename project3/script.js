@@ -1,27 +1,37 @@
-// Wait for the DOM to load before attaching event listeners
+// Questions Button Event Listener
 document.addEventListener("DOMContentLoaded", function() {
   const questionBtn = document.getElementById("question-btn");
   if (questionBtn) {
     questionBtn.addEventListener("click", function() {
-      alert("If you have questions, contact me at:\njohare@hawk.iit.edu");
+      alert("If you have questions, contact me at:\njohare@hawk.illinoistech.edu");
     });
+  }
+
+    if (document.getElementById("map")) {
+    const map= document.createElement("script");
+    map.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap";
+    map.async = true;
+    map.defer = true;
+    document.body.appendChild(map);
   }
 });
 
-// Google Maps Initialization Function with 3 Added Features beyond base code
-function initMap() {
-  // IIT Area
+
+
+// Attach initMap to window so the external script callback can find it
+window.initMap = function() {
+  // Feature 1: Center coordinates for Chicago
   const center = { lat: 41.8781, lng: -87.6298 };
   
-  // Feature 2: Enhanced Map Options (custom map type and enabled controls)
+  // Feature 2: Map options with custom zoom and controls
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 13,
     center: center,
-    mapTypeId: 'roadmap', // Added Feature: Specific map type
-    zoomControl: true,    // Added Feature: Explicit zoom control UI
+    mapTypeId: 'roadmap',
+    zoomControl: true,
   });
 
-  // Feature 3: Marker placed on the map with an InfoWindow
+  // Feature 3: Marker with an InfoWindow
   const marker = new google.maps.Marker({
     position: center,
     map: map,
@@ -35,4 +45,4 @@ function initMap() {
   marker.addListener("click", function() {
     infoWindow.open(map, marker);
   });
-}
+};

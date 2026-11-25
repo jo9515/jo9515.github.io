@@ -115,7 +115,7 @@ video {
   margin: 0 auto;
 }
 
-/* Media Query 1: Tablets and up (min-width: 768px) */
+/* Media 1: Tablets and up (min-width: 768px) */
 @media screen and (min-width: 768px) {
   body {
     background-color: #eef2f7;
@@ -128,7 +128,7 @@ video {
   }
 }
 
-/* Media Query 2: Desktops and up (min-width: 1024px) */
+/* Media 2: Desktops and up (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
   body {
     background-color: #f4f6f9;
