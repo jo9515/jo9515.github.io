@@ -8,15 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
     if (document.getElementById("map")) {
-    const map= document.createElement("script");
-    map.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap";
-    map.async = true;
-    map.defer = true;
-    document.body.appendChild(map);
+    const mapAPI = document.createElement("script");
+    mapAPI.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap";
+    mapAPI.async = true;
+    mapAPI.defer = true;
+    document.body.appendChild(mapAPI);
   }
 });
-
-
 
 // Attach initMap to window so the external script callback can find it
 window.initMap = function() {
@@ -35,7 +33,7 @@ window.initMap = function() {
   const marker = new google.maps.Marker({
     position: center,
     map: map,
-    title: "Jacob's Location - Chicago, IL"
+    title: "Location"
   });
 
   const infoWindow = new google.maps.InfoWindow({
